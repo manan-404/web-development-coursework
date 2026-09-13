@@ -1,0 +1,332 @@
+/* ------------------------------
+   Basic Setup
+------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* ------------------------------
+   Page Shell
+   CSS GRID is used here
+------------------------------ */
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* ------------------------------
+   Header
+   FLEXBOX is used here
+------------------------------ */
+.header {
+    min-height: 80px;
+    padding: 15px 5%;
+    background: #eeeeee;
+    border-bottom: 2px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+.logo-box {
+    width: 80px;
+    height: 45px;
+    background: #bdbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-box {
+    width: 75px;
+    height: 35px;
+    background: #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+/* Search and Login */
+.search-box {
+    width: 180px;
+    height: 38px;
+    background: #d0d0d0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #666;
+}
+
+.button-box {
+    width: 70px;
+    height: 38px;
+    background: #bdbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------
+   Main
+------------------------------ */
+.main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* ------------------------------
+   Hero Section
+   GRID is used here
+------------------------------ */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    min-height: 300px;
+    background: #c7c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: bold;
+}
+
+.hero-content {
+    background: #eeeeee;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* Hero text placeholders */
+.title-box {
+    width: 80%;
+    height: 35px;
+    background: #b5b5b5;
+}
+
+.text-box {
+    width: 100%;
+    height: 80px;
+    background: #d0d0d0;
+}
+
+.small-box {
+    width: 40%;
+    height: 35px;
+    background: #b5b5b5;
+}
+
+/* ------------------------------
+   Cards
+   GRID for card layout
+------------------------------ */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+/* Card image */
+.card-image {
+    height: 150px;
+    background: #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Card content */
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    width: 80%;
+    height: 25px;
+    background: #b5b5b5;
+}
+
+.card-line {
+    width: 100%;
+    height: 12px;
+    background: #d0d0d0;
+}
+
+.card-line.short {
+    width: 65%;
+}
+
+/* ------------------------------
+   Lower Section
+------------------------------ */
+.lower-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+/* Main lower area */
+.lower-main {
+    background: #eeeeee;
+    padding: 20px;
+}
+
+.section-heading {
+    width: 200px;
+    height: 30px;
+    background: #b5b5b5;
+    margin-bottom: 20px;
+}
+
+/* Article row */
+.article-row {
+    display: flex;
+    gap: 15px;
+}
+
+.article-box {
+    flex: 1;
+    height: 100px;
+    background: #cccccc;
+}
+
+/* ------------------------------
+   Sidebar
+------------------------------ */
+.sidebar {
+    background: #eeeeee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-heading {
+    width: 70%;
+    height: 30px;
+    background: #b5b5b5;
+}
+
+.sidebar-item {
+    width: 100%;
+    height: 45px;
+    background: #cccccc;
+}
+
+/* ------------------------------
+   Footer
+   FLEXBOX
+------------------------------ */
+.footer {
+    min-height: 100px;
+    background: #eeeeee;
+    border-top: 2px solid #cccccc;
+    padding: 25px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 40px;
+    background: #bdbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-box {
+    width: 70px;
+    height: 30px;
+    background: #cccccc;
+}
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .lower-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav {
+        display: none;
+    }
+    .header-right {
+        width: 100%;
+        justify-content: center;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .article-row {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  <title>Flexbox axes</title>
+  
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 1.5rem; font-family: system-ui, sans-serif; }
+
+    .container {
+      display: flex;
+      flex-direction: row;        /* row | column | *-reverse */
+      gap: 1rem;                  /* prefer gap over item margins */
+
+      justify-content: center;
+      /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+
+      align-items: center;
+      /* stretch | flex-start | flex-end | center | baseline */
+    }
+
+    .item {
+      background: lightblue;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Main axis = <code>justify-content</code>. Cross axis = <code>align-items</code>.</p>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>

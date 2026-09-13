@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f7f5f0;
+    color: #2b3a2f;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Area */
+.profile-header {
+    background-color: #1a3c2b;
+    padding: 24px 20px;
+    color: #ffffff;
+}
+
+.profile-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.profile-header .subtitle {
+    font-size: 0.85rem;
+    color: #a4c4b0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 18px;
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-nav a {
+    color: #c7decb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.profile-nav a.active {
+    color: #72d693;
+}
+
+/* Main Content */
+.profile-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* About Card */
+.about-card {
+    border: 1px solid #eae6dc;
+    border-radius: 12px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #2b4534;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.about-card h2,
+.skills-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #444;
+    margin-bottom: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    background-color: #e9f0ea;
+    color: #2d5538;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skill-card {
+    background: #faf8f5;
+    border: 1px solid #ece7dc;
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+
+.skill-name {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e8e2d5;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #2d5538;
+    border-radius: 3px;
+}
+
+/* Callout Box */
+.callout-card {
+    background-color: #f3efe6;
+    border-radius: 8px;
+    padding: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.callout-card h3 {
+    font-size: 0.9rem;
+    font-family: Georgia, serif;
+    margin-bottom: 6px;
+    color: #1a3c2b;
+}
+
+.callout-card p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Footer */
+.profile-footer {
+    padding: 20px;
+    margin-top: auto;
+    border-top: 1px solid #f0eee8;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1a3c2b;
+    text-decoration: none;
+    font-weight: bold;
+}
