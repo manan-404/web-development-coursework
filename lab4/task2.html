@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Flexbox — five patterns</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    h2 { font-size: 1rem; margin: 2rem 1rem 0.5rem; }
+    .demo { border: 2px dashed #999; margin: 0 1rem 1rem; }
+    .box { background: #ddd; padding: 1rem; text-align: center; }
+
+    /* 1. Perfect centring */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 30vh;
+    }
+
+    /* 2. Navbar: logo left, links right */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background: #eee;
+    }
+    .navbar nav { display: flex; gap: 1rem; }
+
+    /* 3. Fixed sidebar + fluid content */
+    .layout { display: flex; gap: 1rem; padding: 0.5rem; }
+    .sidebar { flex: 0 0 250px; background: #ccc; padding: 1rem; }
+    .content { flex: 1; background: #eee; padding: 1rem; }
+
+    /* 4. Wrapping cards */
+    .cards { display: flex; flex-wrap: wrap; gap: 1.5rem; padding: 0.5rem; }
+    .card  { flex: 1 1 280px; }
+
+    /* 5. Footer pinned on short pages */
+    .page-shell {
+      display: flex;
+      flex-direction: column;
+      min-height: 40vh;
+    }
+    .page-shell main { flex: 1; background: #eee; padding: 1rem; }
+    .page-shell footer { background: #ccc; padding: 0.75rem 1rem; }
+  </style>
+</head>
+<body>
+  <h2>1. Perfect centring</h2>
+  <div class="demo center">
+    <div class="box">Centered</div>
+  </div>
+
+  <h2>2. Navbar</h2>
+  <header class="navbar demo">
+    <strong>Brand</strong>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <h2>3. Sidebar + content</h2>
+  <div class="layout demo">
+    <aside class="sidebar">Sidebar 250px</aside>
+    <div class="content">Fluid content grows</div>
+  </div>
+
+  <h2>4. Wrapping cards — shrink the window</h2>
+  <div class="cards demo">
+    <div class="box card">Card 1</div>
+    <div class="box card">Card 2</div>
+    <div class="box card">Card 3</div>
+    <div class="box card">Card 4</div>
+  </div>
+
+  <h2>5. Footer pinned on a short page</h2>
+  <div class="page-shell demo">
+    <main>Main grows to fill leftover height</main>
+    <footer>Footer stays at the bottom</footer>
+  </div>
+</body>
+</html>
