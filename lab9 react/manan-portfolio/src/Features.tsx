@@ -25,7 +25,7 @@ const projectsList: Project[] = [
   {
     title: "Market Management System",
     description: "A console-based application built in C++ featuring persistent file handling to track product transactions and pricing workflows.",
-    imageUrl: "/project3.jpg",
+    imageUrl: "/project3.jpeg",
     imageAltText: "C++ terminal console running Market Management System transactions",
     repositoryUrl: "https://github.com/manan-404"
   }
