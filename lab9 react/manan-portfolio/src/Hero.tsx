@@ -15,7 +15,7 @@ export function Hero() {
       </div>
       <div className="hero-image-wrapper">
         <img 
-          src="/profile.jpg" 
+          src="/Profile.jpeg" 
           alt="Portrait of Abdul Manan" 
           className="hero-profile-image" 
         />

@@ -11,14 +11,14 @@ const projectsList: Project[] = [
   {
     title: "Network Packet Sniffer",
     description: "A Python-based tool developed under the Code Alpha framework to capture and analyze data traffic streams for security monitoring.",
-    imageUrl: "/project1.jpg",
+    imageUrl: "/project1.jpeg",
     imageAltText: "Code snippet and terminal output of network packet sniffer tool",
     repositoryUrl: "https://github.com/manan-404"
   },
   {
     title: "Student Record Management System",
     description: "A structured data structures application built to efficiently store, retrieve, and organize student records with optimized performance.",
-    imageUrl: "/project2.jpg",
+    imageUrl: "/project2.jpeg",
     imageAltText: "Interface and code architecture of Student Record Management System",
     repositoryUrl: "https://github.com/manan-404"
   },
